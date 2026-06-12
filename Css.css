@@ -1,0 +1,143 @@
+
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+}
+
+body{
+    background-color: honeydew;
+}
+.display-3{
+    color: black;
+}
+
+.lead{
+    color: black;
+}
+
+.social-icons{
+font-size: 60px;
+
+}
+
+
+.profile-img{
+height: 450px;
+position: relative;
+top: 100px;
+left: 50px;
+ rotate: 10deg;
+}
+
+.navbar{
+    
+   font-size: 20px;
+}
+.nav-link{
+    color: black;
+    transition: 0.3s;
+}
+.navbar-toggler{
+    padding: 5px 5px;
+
+    
+}
+.nav-link:hover{
+    color: cornflowerblue;
+}
+
+.text-dark{
+    position: relative;
+    top: 40px;
+}
+
+.col-12 {
+    position: relative;
+    top: 40px;
+
+}
+
+@media (max-width: 768px) { 
+    .profile-img {
+        rotate: 0deg;
+        animation: none;
+        position: relative;
+        right: 80px;
+    }
+}
+
+@media (max-width: 768px) {
+    .social-icons {
+        position: relative;
+        left: 170px;
+    }
+}
+@media (max-width: 768px) {
+    .navbar-nav {
+        display: flexbox;
+        flex-direction: row;
+        align-items: end;
+        gap: 0px;
+    }
+}
+.about-content{
+    font-size: 22px;
+    position: relative;
+    bottom: 50px;  
+    color: grey;
+}
+
+.list-unstyled{
+    position: relative;
+    bottom: 70px;
+    font-size: 20px;
+}
+
+@media (max-width: 768px){
+.list-unstyled{
+  position: relative;
+  
+  font-size: 20px;
+} 
+}
+@media(max-width:768px){
+
+    .about-content{
+        width: 110%;
+        right: 35px;
+
+    }
+}
+
+.content{
+    font-size: 20px;
+    color: grey;
+}
+
+.choose-card{
+height: 200px;
+border-radius: 20px;
+background-color: lavender;
+ border: 2px solid #0d6efd;
+    animation: float 2s ease-in-out infinite;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.skill-icon{
+    font-size: 20px;
+}
+
+.icon-edu{
+    font-size: 90px;
+}
