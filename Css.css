@@ -143,12 +143,8 @@ body {
         transform: translateY(0);
     }
 }
-
-.skill-icon {
-    font-size: 20px;
-}
-.icon-edu {
-    font-size: 90px;
+.icon-edu{
+    font-size: 60px;
 }
 .skill-section{
     padding: 50px 20px;
@@ -166,19 +162,20 @@ body {
     border-radius: 8px;
     margin-bottom: 50px;
 }
+
 .skill-container{
     display: flex;
     justify-content: center;
-    align-items: flex-start;
-    gap: 80px;
-    position:relative;
+    align-items: center;
+       gap: 10px;/* reduced from 80px */
+    position: relative;
 }
 
-.divider{
-    width: 3px;
-    height: 550px;
-    border-left: 3px dashed gray;
+.skill-card{
+    position: relative;
+    width: 280px;   /* reduced from 400px */
 }
+
 .skill-card{
     position: relative;
     width: 400px;
@@ -230,12 +227,43 @@ width: 250px;
 height: 90px;
 border-radius: 50%;
 left: 85px;
+bottom: 150px;
 position: relative;
+ box-shadow:
+        3px 3px 8px rgba(0,0,0,0.3),
+        inset -2px -2px 5px rgba(0,0,0,0.1),
+        inset 2px 2px 5px rgba(255,255,255,0.8);
 }
 .frontend-platform{
     background:#ff9f80;
+   
 }
 
 .backend-platform{
     background:#4cd48c;
+}
+.small-circle {
+    position: relative;
+    width: 60px;
+    height: 20px;   /* Equal width & height for perfect circle */
+    border-radius: 50%;
+    background: radial-gradient(circle at 30% 30%, #ffffff, #d9d9d9);
+    top: 20px;
+    left: 90px;
+
+    box-shadow:
+        3px 3px 8px rgba(0,0,0,0.3),
+        inset -2px -2px 5px rgba(0,0,0,0.1),
+        inset 2px 2px 5px rgba(255,255,255,0.8);
+}
+
+.small-circle::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: rgba(255,255,255,0.9);
+    border-radius: 50%;
+    top: 8px;
+    left: 8px;
 }
