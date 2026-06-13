@@ -1,4 +1,6 @@
-html,
+html{
+    scroll-behavior:smooth;
+}
 body {
     overflow-x: hidden;
     width: 100%;
@@ -18,16 +20,13 @@ body {
 
 .social-icons {
     font-size: 60px;
-
 }
 
 
 .profile-img {
-    height: 450px;
-    position: relative;
-    top: 100px;
-    left: 50px;
-    rotate: 10deg;
+    max-width: 100%;
+    height: auto;
+    transform: rotate(10deg);   
 }
 
 .navbar {
@@ -36,8 +35,7 @@ body {
 }
 
 .nav-link {
-    color: black;
-    transition: 0.3s;
+    position:relative;
 }
 
 .navbar-toggler {
@@ -45,9 +43,18 @@ body {
 
 
 }
-
-.nav-link:hover {
-    color: cornflowerblue;
+.nav-link::after{
+    content:"";
+    position:absolute;
+    width:0;
+    height:2px;
+    left:0;
+    bottom:0;
+    background:#0d6efd;
+    transition:.3s;
+}
+.nav-link:hover::after{
+    width:100%;
 }
 
 .text-dark {
@@ -55,31 +62,21 @@ body {
     top: 40px;
 }
 
-.col-12 {
-    position: relative;
-    top: 40px;
-
-}
-
 @media (max-width: 768px) {
     .profile-img {
-        rotate: 0deg;
-        animation: none;
-        position: relative;
-        right: 80px;
+         transform: rotate(0deg);
     }
 }
 
 @media (max-width: 768px) {
     .social-icons {
-        position: relative;
-        left: 170px;
+       justify-content: center;
     }
 }
 
 @media (max-width: 768px) {
     .navbar-nav {
-        display: flexbox;
+        display: flex;
         flex-direction: row;
         align-items: end;
         gap: 0px;
@@ -93,7 +90,7 @@ body {
     color: grey;
 }
 
-.list-unstyled {
+.about-list {
     position: relative;
     bottom: 70px;
     font-size: 20px;
@@ -110,8 +107,8 @@ body {
 @media(max-width:768px) {
 
     .about-content {
-        width: 110%;
-        right: 35px;
+       width: 100%;
+       
 
     }
 }
@@ -172,6 +169,14 @@ body {
     position: relative;
 }
 
+@media(max-width:768px){
+    .skill-container{
+        flex-direction: column;
+        gap: 30px;
+    }
+
+}
+
 .skill-card{
     position: relative;
     
@@ -208,6 +213,7 @@ body {
 }
 
 .icons i{
+    font-size: 25px;
     transition: all 0.3s ease;
 }
 
@@ -236,9 +242,9 @@ body {
     font-size: 25px;
 }
 .skill-card-4{
-    position: relative;
-    left: 430px;
-    width: 400px;
+    max-width: 400px;
+    margin: auto;
+    left: 0;
     opacity: 0;
     transform: translateY(50px);
     animation: skillFadeUp 1s ease forwards;
@@ -258,7 +264,7 @@ body {
 }
 
 .work-card:hover{
-    transform: scale(1.03);
+    transform:translateY(-10px);
 }
 .container-con{
     width:50%;
@@ -268,6 +274,15 @@ body {
     background:cornflowerblue;
      border: 1px solid #ddd;
     border-radius: 30px;
+}
+@media(max-width:768px){
+
+.container-con{
+    width:90%;
+    left:5%;
+
+}
+
 }
 .contact-sec{
     background:rgb(240, 243, 244);
@@ -283,9 +298,16 @@ body {
 .get-in-so{
 
     position: relative;
-    bottom: 120px;
+    bottom: 170px;
     font-size: 30px;
+}
+
+.g-mail{
+    font-size: 14px;
 }
 .lead-sort{
     font-size: 16px;
+}
+.selenium-icon{
+    font-size:48px;
 }
