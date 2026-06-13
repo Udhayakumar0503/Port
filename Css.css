@@ -244,3 +244,48 @@ body {
     animation: skillFadeUp 1s ease forwards;
     transition: transform 0.4s ease;
 }
+.work-card{
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    border: 3px solid transparent;
+    background-image:
+        linear-gradient(white, white),
+        linear-gradient(135deg,#0d6efd,#7b2cbf,#06b6d4);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    transition: .4s;
+}
+
+.work-card:hover{
+    transform: scale(1.03);
+}
+.container-con{
+    width:50%;
+    position: relative;
+    left: 26%;
+    bottom: 30px;
+    background:cornflowerblue;
+     border: 1px solid #ddd;
+    border-radius: 30px;
+}
+.contact-sec{
+    background:rgb(240, 243, 244);
+}
+.icon-bi{
+    font-size: 18px;
+}
+
+.works-list{
+    position: relative;
+    margin-bottom: 10px;
+}
+.get-in-so{
+
+    position: relative;
+    bottom: 120px;
+    font-size: 30px;
+}
+.lead-sort{
+    font-size: 16px;
+}
