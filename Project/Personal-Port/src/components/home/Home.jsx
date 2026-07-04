@@ -67,7 +67,7 @@ function Profiletitle() {
                         <p className="job-look"><FaBug/> Software Test Engineer</p>
                         <p className="job-look"><FaLaptopCode/> Software Developer</p>
                         <p className="job-look"><strong>Preferred Location</strong></p>
-                        <p className="job-look"><FaMapMarkerAlt/> Chennai | Bangalore | Coimbatore | Flexible </p>
+                        <p className="job-look"><FaMapMarkerAlt/> Chennai | Bangalore | Coimbatore | Flexible</p>
                     </div>
                 </div>
             </div>
