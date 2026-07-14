@@ -34,7 +34,6 @@ function Navbar() {
           <div className="logo">
             UK
           </div>
-         
           <ul className="navbar-nav mx-auto gap-1">
             {NavHead.map((item) => (
               <li className="nav-item" key={item.Name}>
@@ -50,19 +49,11 @@ function Navbar() {
               </li>
             ))}
           </ul>
-
-              <div className="profile-section">
-                <Profile />
-              </div>
-
-          
-
-
+          <div className="profile-section">
+            <Profile />
+          </div>
         </div>
-
-
       </div>
-
     </nav>
   );
 }
