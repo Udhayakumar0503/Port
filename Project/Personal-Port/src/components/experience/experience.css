@@ -1,47 +1,45 @@
-
-
-
-.section-exp{
+.section-exp {
     width: 100%;
-    padding: 40px;
-    background-color: #f6faf6;
+    padding: 40px 20px;
+    background: #f6faf6;
     min-height: 100vh;
-    
 }
-.section-container{
-    width: 100%;
-    max-width: 1040px;
-    margin: 0 30px;
-    display: flex;
-    gap: 40px;
 
-    
+.section-container {
+    max-width: 1300px;
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+    align-items: start;
 }
-.section-container{
-    display:grid;
-    grid-template-columns:2fr 1fr;
-    gap:30px;
-    align-items:start;
+
+/* ---------------- Left ---------------- */
+
+.left-exp {
+    background: #fff;
+    padding: 20px 30px;
+    border-radius: 25px;
+    box-shadow: 0 10px 35px rgba(0,0,0,.08);
 }
-.left-exp{
-    background-color: #fff;
-    padding: 15px 30px;
-    border-radius: 28px;
-    box-shadow:0 10px 35px rgba(0,0,0,.08);;
-}
+
 .exp-heading h2{
-    font-size: 25px;
+    font-size:28px;
+    margin-bottom:8px;
 }
+
 .exp-heading p{
-    font-size: 13px;
-    width: 70%;
-    color: gray;
+    font-size:14px;
+    color:#666;
+    width:75%;
 }
+
 .exp-timeline{
-    position: relative;
-    padding-left: 95px;
-    
+    position:relative;
+    padding-left:90px;
 }
+
 .exp-timeline::before{
     content:"";
     position:absolute;
@@ -49,55 +47,291 @@
     top:0;
     width:2px;
     height:100%;
-    background:#d8d8d8;
+    background:#ddd;
 }
+
 .timeline-item{
     position:relative;
-    margin-bottom:10px;
     background:#fff;
-    border-radius:22px;
-    padding:15px;
-    border:1px solid #ececec;
-    box-shadow:0 10px 30px rgba(0,0,0,.07);
-    transition:.35s;
-    height: 160px;
+    border-radius:20px;
+    border:1px solid #eee;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    padding:18px;
+    margin-bottom:18px;
+    transition:.3s;
+    min-height:160px;
 }
+
 .timeline-item:hover{
-    transform:translateY(-8px);
-    box-shadow:0 20px 40px rgba(0,0,0,.12);
+    transform:translateY(-6px);
 }
+
 .timeline-icon{
     position:absolute;
-    left:-85px;
-    top:18px;
-    width:52px;
-    height:52px;
-    border-radius:18px;
+    left:-82px;
+    top:20px;
+    width:50px;
+    height:50px;
+    border-radius:15px;
     background:#eef8ec;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    font-size:30px;
     color:#2f8d2f;
-    box-shadow:0 8px 20px rgba(0,0,0,.08);
-    z-index:2;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:26px;
 }
+
+.experience-card h3{
+    font-size:24px;
+    margin:0;
+}
+
 .experience-card h4{
     color:#2f8d2f;
-    font-size:14px;
-    font-weight:600;
+    margin:5px 0;
+    font-size:15px;
 }
-.experience-card h3{
-    font-size: 25px;
-}
+
 .experience-meta{
     display:flex;
     gap:20px;
-    color:#666;
-    font-size:12px;
+    font-size:13px;
+    color:#777;
+}
+
+.description{
+    margin-top:10px;
+    font-size:13px;
+    line-height:1.6;
+}
+
+/* ---------------- Right ---------------- */
+
+.right-container{
+    background:#fff;
+    border-radius:20px;
+    padding:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.exp-over p{
+    font-size:24px;
+    margin:0 0 20px;
+}
+
+.experiece-content{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.experience-over-icon{
+    width:58px;
+    height:58px;
+    border-radius:50%;
+    background:#eef8ec;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:#2f8d2f;
+    font-size:28px;
+}
+
+.total-ecperience p{
+    margin:0;
+    color:#2f8d2f;
+    font-size:28px;
+    font-weight:bold;
+}
+
+.total-ecperience span{
+    font-size:13px;
+}
+
+.line{
+    width:1px;
+    height:60px;
+    background:#ddd;
+}
+
+/* ---------------- Projects ---------------- */
+
+.project-box{
+    margin-top:20px;
+    background:#fff;
+    border-radius:20px;
+    padding:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.project-box h4{
+    margin-bottom:20px;
+    font-size:22px;
+}
+
+.project-item{
+    display:flex;
+    gap:15px;
+    margin-bottom:25px;
+}
+
+.project-icon{
+    width:55px;
+    height:55px;
+    background:#eef8ec;
+    border-radius:15px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:#2f8d2f;
+    font-size:25px;
+    flex-shrink:0;
+}
+
+.project-card{
+    flex:1;
+}
+
+.project-card h3{
+    margin:0;
+    font-size:19px;
+}
+
+.project-card h4{
+    margin:5px 0;
+    color:#2f8d2f;
+    font-size:14px;
+}
+
+.pro-description{
+    font-size:13px;
+    line-height:1.6;
+}
+
+/* ======================================================
+                    TABLET
+====================================================== */
+
+@media (max-width:1024px){
+
+    .section-container{
+        grid-template-columns:1.6fr 1fr;
+    }
+
+    .exp-heading p{
+        width:100%;
+    }
+
+    .timeline-item{
+        min-height:auto;
+        
+    }
 
 }
-.description{
-    font-size: 12px;
-    margin-top: -10px;
+
+/* ======================================================
+                    MOBILE
+====================================================== */
+
+@media (max-width:768px){
+
+    .section-exp{
+        padding:20px 15px;
+    }
+
+    .section-container{
+        grid-template-columns:1fr;
+        gap:20px;
+    }
+
+    .left-exp{
+        padding:20px;
+    }
+
+    .exp-heading p{
+        width:100%;
+    }
+
+    .exp-timeline{
+        padding-left:60px;
+    }
+
+    .exp-timeline::before{
+        left:20px;
+    }
+
+    .timeline-icon{
+        left:-48px;
+        width:40px;
+        height:40px;
+        font-size:20px;
+    }
+
+    .timeline-item{
+        min-height:auto;
+    }
+
+    .experience-card h3{
+        font-size:20px;
+    }
+
+    .experience-meta{
+        flex-wrap:wrap;
+        gap:8px;
+    }
+
+    /* Experience Overview */
+
+    .experiece-content{
+        flex-direction:row;
+        gap:20px;
+        text-align:center;
+    }
+
+    .line{
+        display:none;
+    }
+
+    /* Projects */
+
+    .project-item{
+        flex-direction:column;
+        align-items:flex-start;
+    }
+
+    .project-icon{
+        width:50px;
+        height:50px;
+        font-size:22px;
+    }
+
+}
+
+/* ======================================================
+                SMALL MOBILE
+====================================================== */
+
+@media (max-width:480px){
+
+    .experience-card h3{
+        font-size:18px;
+    }
+
+    .experience-card h4{
+        font-size:14px;
+    }
+
+    .description,
+    .pro-description{
+        font-size:12px;
+    }
+
+    .project-card h3{
+        font-size:17px;
+    }
+
+    .project-card h4{
+        font-size:13px;
+    }
+
 }
