@@ -44,7 +44,7 @@ function Profiletitle() {
             <div className="row p-row">
                 <div className="col-lg-8">
                     <div className="p-col">
-                        <h2 className="pro-name">Prabhakaran R</h2>
+                        <h2 className="pro-name">Udhayakumar R</h2>
                         <h6 className="pro-role">Full Stack Developer | Software Tester</h6><h6>2 Years Experience</h6>
                         <p className="pro-add"><FaMapMarkerAlt />Tiruchirappalli, Tamil Nadu, India.</p>
                         <p className="pro-sum"> Passionate Full Stack Developer with a strong foundation in
