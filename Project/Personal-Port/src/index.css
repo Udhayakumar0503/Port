@@ -4,16 +4,14 @@
     box-sizing:border-box;
 }
 
-html{
-    scroll-behavior:smooth;
-}
-
 html,
 body{
     width:100%;
     overflow-x:hidden;
-}
+      scroll-behavior:smooth;
+      background:honeydew;
+     box-sizing: border-box;
+     overflow-x: hidden;
+  max-width: 100%;
 
-body{
-    background:honeydew;
 }
