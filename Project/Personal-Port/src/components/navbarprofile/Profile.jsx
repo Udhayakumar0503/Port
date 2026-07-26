@@ -32,7 +32,6 @@ function Profile() {
           <a href="#" className="profile-item"><FaLinkedin /> LinkedIn</a>
           <a href="#" className="profile-item"><FaGithub /> GitHub</a>
           <a href="#" className="profile-item"><FaEnvelope /> Gmail</a>
-          <a href="#" className="profile-item"><FaUser /> Personal Data</a>
         </div>
       )}
     </div>

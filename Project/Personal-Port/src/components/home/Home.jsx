@@ -4,7 +4,7 @@ import proimage from "../../assets/Profile.png";
 import { FaBug, FaCloud, FaEnvelope, FaGithub, FaLaptop, FaLaptopCode, FaLinkedin, FaMapMarkerAlt, FaUserTie } from "react-icons/fa";
 function Home() {
     return (
-        <section className="bg-Sec ">
+        <section className="bg-Sec " id="home">
 
             <div className="container hero-con">
                 <div className="row align-items-center ">
@@ -24,7 +24,7 @@ function Home() {
                             <h5 className="url-links"><span><FaLinkedin /> <a className="link-s" href="https://www.linkedin.com/in/udhayakumar-r-97589a1b8/" target="_blank" rel="noopener noreferrer"><span className="link-text">Linked In</span></a></span></h5>
                             <h5 className="url-links"><span><FaGithub /> <a className="link-s" href="https://github.com/" target="_blank" rel="noopener noreferrer"><span className="link-text">Git Hub</span></a></span></h5>
                             <h5 className="url-links"><span><FaEnvelope /> <a className="link-s" href="mailto:udhayakumarravichandran@gmail.com"><span className="link-text">Mail</span></a></span></h5>
-                            <h5 className="url-links"><span><FaUserTie /> <a className="link-s" href="#"><span className="link-text">Personal Data</span></a></span></h5>
+                           
                         </div>
                     </div>
 

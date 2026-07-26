@@ -1,66 +1,113 @@
-import "./Navbar.css";
-import Profile from "../navbarprofile/Profile";
-import { useState } from "react";
-import { FaHome, FaUser, FaBriefcase, FaEnvelope, FaDownload, FaChevronDown, FaMoon } from "react-icons/fa";
+  import "./Navbar.css";
+  import Profile from "../navbarprofile/Profile";
 
-function Navbar() {
+  import {
+    FaHome,
+    FaUser,
+    FaBriefcase,
+    FaEnvelope,
+    FaDownload,
+    FaTools 
+  } from "react-icons/fa";
 
-  const NavHead = [
-    { Name: "Home", Link: "#home", className: "home-link" },
-    { Name: "About Me", Link: "#about", className: "about-link" },
-    { Name: "Experience", Link: "#experience", className: "experience-link" },
-    { Name: "Contact", Link: "#contact", className: "contact-link" },
-    { Name: "Resume", Link: "#resume", className: "resume-link" },
-  ];
+  function Navbar() {
 
-  return (
-    <nav className="navbar navbar-expand-lg fixed-top ">
+    const NavHead = [
+      {
+        name: "Home",
+        link: "#home",
+        icon: <FaHome />,
+      },
+      {
+        name: "About Me",
+        link: "#about",
+        icon: <FaUser />,
+      },
+      {
+        name: "Experience",
+        link: "#experience",
+        icon: <FaBriefcase />,
+      },
+      {
+        name: "Contact",
+        link: "#footer",
+        icon: <FaEnvelope />,
+      },
 
-      <div className="container-fluid px-4 ">
+      {
+        name: "Skills",
+        link: "#skills",
+        icon: <FaTools  />,
+      },
+      {
+        name: "Resume",
+        link: "Udhay_CUS SE Acc.pdf",
+        icon: <FaDownload />,
+        download:true,
+      },
+    ];
 
-        <button
-          className="navbar-toggler ms-auto"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span className="navbar-toggler-icon"></span>
-        </button>
+    return (
+      <nav className="navbar navbar-expand-lg fixed-top">
 
-        <div className="collapse navbar-collapse " id="navbarNav">
-          <div className="logo">
-            UK
+        <div className="container-fluid px-4">
+
+          <button
+            className="navbar-toggler ms-auto"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span className="navbar-toggler-icon"></span>
+          </button>
+
+          <div className="collapse navbar-collapse" id="navbarNav">
+
+            {/* Logo */}
+
+            <div className="logo">
+              UK
+            </div>
+
+            {/* Navigation */}
+
+            <ul className="navbar-nav mx-auto gap-1">
+
+              {NavHead.map((item) => (
+                <li className="nav-item" key={item.name}>
+
+                  <a className="nav-link" href={item.link}  download={item.download}>
+
+                    <span className="nav-icon">
+                      {item.icon}
+                    </span>
+
+                    <span>
+                      {item.name}
+                    </span>
+
+                  </a>
+
+                </li>
+              ))}
+
+            </ul>
+
+            {/* Profile */}
+
+            <div className="profile-section">
+              <Profile />
+            </div>
+
           </div>
-          <ul className="navbar-nav mx-auto gap-1">
-            {NavHead.map((item) => (
-              <li className="nav-item" key={item.Name}>
-                <a className={`nav-link ${item.className}`} href={item.Link}>
-                  {item.Name === "Home" && <FaHome className="nav-icon" />}
-                  {item.Name === "About Me" && <FaUser className="nav-icon" />}
-                  {item.Name === "Experience" && <FaBriefcase className="nav-icon" />}
-                  {item.Name === "Contact" && <FaEnvelope className="nav-icon" />}
-                  {item.Name === "Resume" && <FaDownload className="nav-icon" />}
 
-                  <span>{item.Name}</span>
-                </a>
-              </li>
-            ))}
-          </ul>
-          <div className="profile-section">
-            <Profile />
-          </div>
         </div>
-      </div>
-    </nav>
-  );
-}
 
+      </nav>
+    );
+  }
 
-
-
-
-
-export default Navbar;
+  export default Navbar;

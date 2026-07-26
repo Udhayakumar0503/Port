@@ -29,7 +29,7 @@ function Exp() {
 
     return (
 
-        <section className="section-exp">
+        <section className="section-exp" id="experience">
             <div className="section-container">
                 <div className="left-exp">
 
@@ -89,7 +89,7 @@ function Exp() {
                         </div>
                     </div>
 
-                    <div className="project-box">
+                    <div className="project-box" id="projects">
                         <div>
                             <h4>Projects</h4>
                         </div>

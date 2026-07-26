@@ -21,7 +21,7 @@ function About() {
     }
 
     return (
-        <section className="about-wrapper">
+        <section className="about-wrapper" id="about">
             {/* BOX 1: Testimonials */}
             <div className="about-grid">
                 <div className="left-side">
@@ -190,7 +190,7 @@ function About() {
                             </div>
                         </div>
                     </div>
-                    <div className="box skill-box">
+                    <div className="box skill-box" id="skills">
                         <h2 className="box-title">SKILLS</h2>
                         <p className="box-desc">
                             Technologies and tools I work with.
