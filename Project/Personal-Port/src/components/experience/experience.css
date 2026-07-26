@@ -3,6 +3,7 @@
     padding: 40px 20px;
     background: #f6faf6;
     min-height: 100vh;
+    overflow-x: hidden;
 }
 
 .section-container {
@@ -103,6 +104,7 @@
     margin-top:10px;
     font-size:13px;
     line-height:1.6;
+    overflow-wrap: break-word;
 }
 
 /* ---------------- Right ---------------- */
@@ -116,13 +118,14 @@
 
 .exp-over p{
     font-size:24px;
-    margin:0 0 20px;
+    margin:0 0 2px;
 }
 
 .experiece-content{
     display:flex;
     justify-content:space-between;
     align-items:center;
+    row-gap: 16px;
 }
 
 .experience-over-icon{
@@ -135,6 +138,7 @@
     align-items:center;
     color:#2f8d2f;
     font-size:28px;
+    flex-shrink: 0;
 }
 
 .total-ecperience p{
@@ -190,6 +194,7 @@
 
 .project-card{
     flex:1;
+    min-width: 0;
 }
 
 .project-card h3{
@@ -206,6 +211,7 @@
 .pro-description{
     font-size:13px;
     line-height:1.6;
+    overflow-wrap: break-word;
 }
 
 /* ======================================================
@@ -283,7 +289,8 @@
     /* Experience Overview */
 
     .experiece-content{
-        flex-direction:row;
+        flex-wrap: wrap;
+        justify-content: center;
         gap:20px;
         text-align:center;
     }
