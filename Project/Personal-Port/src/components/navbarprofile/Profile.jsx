@@ -27,13 +27,34 @@ function Profile() {
         <img src={ProfileImage} alt="Profile" className="profile-image" />
       </div>
       <FaChevronDown className={`profile-arrow ${isOpen ? "rotate" : ""}`} />
-      {isOpen && (
-        <div className="my-dropdown">
-          <a href="#" className="profile-item"><FaLinkedin /> LinkedIn</a>
-          <a href="#" className="profile-item"><FaGithub /> GitHub</a>
-          <a href="#" className="profile-item"><FaEnvelope /> Gmail</a>
-        </div>
-      )}
+     {isOpen && (
+  <div className="my-dropdown">
+    <a
+      href="https://www.linkedin.com/in/udhayakumar-r-97589a1b8/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="profile-item"
+    >
+      <FaLinkedin /> LinkedIn
+    </a>
+
+    <a
+      href="https://github.com/Udhayakumar0503"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="profile-item"
+    >
+      <FaGithub /> GitHub
+    </a>
+
+    <a
+      href="mailto:udhayakumarravichandran@gmail.com"
+      className="profile-item"
+    >
+      <FaEnvelope /> Gmail
+    </a>
+  </div>
+)}
     </div>
   );
 }

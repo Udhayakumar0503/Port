@@ -7,11 +7,11 @@ import {
 const experiences = [
     {
         role: "Trainee", company: "India Japan Lighting Private Limited",
-        duration: "July,2025 -June,2026", loaction: "Chennai", status: "Previous", description: "Worked on a data entry task and documentation using Ms Excel, Power Point, and Ms Word. Managing and organizing the data efficiently to support the bussiness Operations."
+        duration: "July,2025 -June,2026", loaction: "Chennai", status: "Previous", description: "Worked on a data entry task and documentation using Ms Excel, Power Point, and Ms Word. Managing and organizing the data efficiently to support the business Operations."
     },
     {
         role: "Proposal Engineer", company: "Clear Aqua Technologies",
-        duration: "April,2024-June,2025", loaction: " Trichy", status: "Previous", description: "Prespared the technical proposals and documentation for the water treatment projects,Collobrate with the cross functional teams to deliver customized solution for client requirments."
+        duration: "April,2024-June,2025", location: " Trichy", status: "Previous", description: "Prepared the technical proposals and documentation for the water treatment projects,Collabrate with the cross functional teams to deliver customized solution for client requirements."
     },
     {
         role: "Software Testing Intern", company: "Greens Technology",

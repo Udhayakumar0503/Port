@@ -256,7 +256,7 @@ function About() {
                                         <span className="spa-ico"><SiSelenium className="selenium" />Selenium</span>
                                         <span className="spa-ico"><SiApachemaven className="maven" />Apache Maven</span>
                                         <span className="spa-ico"><FaTasks className="testng" />TestNg</span>
-                                        <span className="spa-ico"><SiCucumber className="cucumber" />Cuccumber </span>
+                                        <span className="spa-ico"><SiCucumber className="cucumber" />Cucumber </span>
                                     </div>
                                 </div>
                             </div>

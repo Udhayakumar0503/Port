@@ -22,7 +22,7 @@ function Home() {
                         <div className="soc-head">
                             <h5 className="url-tit">Social Profiles</h5>
                             <h5 className="url-links"><span><FaLinkedin /> <a className="link-s" href="https://www.linkedin.com/in/udhayakumar-r-97589a1b8/" target="_blank" rel="noopener noreferrer"><span className="link-text">Linked In</span></a></span></h5>
-                            <h5 className="url-links"><span><FaGithub /> <a className="link-s" href="https://github.com/" target="_blank" rel="noopener noreferrer"><span className="link-text">Git Hub</span></a></span></h5>
+                            <h5 className="url-links"><span><FaGithub /> <a className="link-s" href="https://github.com/Udhayakumar0503" target="_blank" rel="noopener noreferrer"><span className="link-text">Git Hub</span></a></span></h5>
                             <h5 className="url-links"><span><FaEnvelope /> <a className="link-s" href="mailto:udhayakumarravichandran@gmail.com"><span className="link-text">Mail</span></a></span></h5>
                            
                         </div>

@@ -41,7 +41,7 @@
       },
       {
         name: "Resume",
-        link: "Udhay_CUS SE Acc.pdf",
+        link: "Udhayakumar_Resume.pdf",
         icon: <FaDownload />,
         download:true,
       },

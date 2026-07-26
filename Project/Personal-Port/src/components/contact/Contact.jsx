@@ -45,7 +45,7 @@ function Footer() {
     {
       icon: <FaEnvelope />,
       title: "Contact",
-      link: "#contact",
+      link: "#footer",
     },
 
   ];
@@ -72,11 +72,11 @@ function Footer() {
     },
     {
       icon: <FaLinkedin />,
-      link: "https://linkedin.com",
+      link: "https://www.linkedin.com/in/udhayakumar-r-97589a1b8/",
     },
     {
       icon: <FaEnvelope />,
-      link: "mailto:udhayakumar@gmail.com",
+      link: "mailto:udhayakumarravichandran@gmail.com",
     },
   ];
 
@@ -106,7 +106,7 @@ function Footer() {
             passionate about building responsive, scalable and modern web
             applications with React, Spring Boot and MySQL.
           </p>
-          <a href="/Udhay_CUS SE Acc.pdf" download className="a-resume">
+          <a href="/Udhayakumar_Resume.pdf" download className="a-resume">
             <button className="resume-btn">
               <FaDownload />
               Download Resume
